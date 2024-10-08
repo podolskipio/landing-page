@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { AlertCircle, Rocket, XCircle, Globe, CheckCircle, TrendingUp, Shield, Users, PhoneCall, ChevronRight, Brain, Target, Zap, Mail, Clock, X } from 'lucide-react';
-import { Link } from 'react-router-dom'; // Add this import at the top of your file
+import { AlertCircle, Rocket, Search, XCircle, Globe, CheckCircle, TrendingUp, Shield, Users, ChevronRight, Brain, Target, Zap, Mail, Clock, X } from 'lucide-react';
 
 const Header = ({ setActivePage }: { setActivePage: (page: string) => void }) => (
   <header className="bg-indigo-900 text-white p-4 shadow-lg">
@@ -61,7 +60,12 @@ const HomePage = ({ setActivePage }: { setActivePage: (page: string) => void }) 
           description="Identify and mitigate compliance risks efficiently with our intelligent risk assessment system. By analyzing your business processes and regulatory requirements, we help you pinpoint potential compliance gaps and vulnerabilities. Our platform provides actionable insights and recommendations, enabling you to proactively address risks before they become issues, thus protecting your organization from penalties and reputational damage."
         />
         <FeatureCard 
-          icon={<PhoneCall size={48} />} 
+          icon={<Search size={48} />} 
+          title="Policy mapping" 
+          description="Our AI-powered system maps out your policies and regulations, providing a comprehensive overview of your compliance landscape. This feature helps you understand how different regulations and policies interrelate, ensuring you have a holistic view of your compliance requirements. It also allows you to quickly identify gaps between your policies and the regulatory standards, enabling you to address any discrepancies and maintain a compliant organization."
+        />
+        <FeatureCard 
+          icon={<Brain size={48} />} 
           title="AI intelligent assistant" 
           description="Get instant answers to your compliance questions with our AI assistant. This intelligent agent can access your entire compliance database, providing quick and accurate responses to queries about regulations, policies, and procedures. It's like having a compliance expert on call at all times, helping your team navigate complex compliance issues with ease and confidence."
         />
@@ -124,6 +128,7 @@ const ProductPage: React.FC = () => (
                 "AI-powered global regulation monitoring",
                 "Automated multi-lingual document analysis",
                 "Intelligent cross-market risk assessment",
+                "Policy and regulation mapping",
                 "Rapid compliance roadmap for new markets"
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
@@ -174,13 +179,6 @@ const ProductPage: React.FC = () => (
           </div>
         </div>
       </section>
-      
-      <section className="text-center">
-        <h2 className="text-3xl font-bold mb-6 text-indigo-900">Ready to Accelerate Your Global Expansion?</h2>
-        <Link to="/contact-us" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-lg hover:shadow-xl">
-          Get Started Now
-        </Link>
-      </section>
     </div>
   </PageContainer>
 );
@@ -203,6 +201,11 @@ const SolutionsPage = () => (
         icon={<Users />}
         title="Proactive Risk Management" 
         description="Identify and mitigate potential compliance risks before they become issues. Our AI-powered system helps you avoid costly fines and maintain a sterling reputation in your industry."
+      />
+      <FeatureSection 
+          icon={<Search size={48} />} 
+          title="Policy mapping" 
+        description="Our AI-powered system maps out your policies and regulations, providing a comprehensive overview of your compliance landscape. This feature helps you understand how different regulations and policies interrelate, ensuring you have a holistic view of your compliance requirements. It also allows you to quickly identify gaps between your policies and the regulatory standards, enabling you to address any discrepancies and maintain a compliant organization."
       />
       <FeatureSection 
         icon={<Brain />}
@@ -355,7 +358,6 @@ const ContactUsPage = () => {
           </p>
           <p className="mb-4">
             Email: info@icompliance.com<br />
-            Phone: +1 (555) 123-4567
           </p>
         </div>
         <div className="bg-white text-indigo-900 p-8 rounded-lg shadow-lg">
