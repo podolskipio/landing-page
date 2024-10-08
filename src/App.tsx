@@ -299,7 +299,7 @@ const ContactForm = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out text-black"
               required
               placeholder="John Doe"
             />
@@ -312,7 +312,7 @@ const ContactForm = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
               name="company"
               value={formData.company}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out text-black"
               required
               placeholder="Acme Inc."
             />
@@ -325,7 +325,7 @@ const ContactForm = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out text-black"
               required
               placeholder="john.doe@company.com"
             />
