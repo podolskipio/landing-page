@@ -205,7 +205,7 @@ const SolutionsPage = () => (
       <FeatureSection 
           icon={<Search size={48} />} 
           title="Policy mapping" 
-        description="Our AI-powered system maps out your policies and regulations, providing a comprehensive overview of your compliance landscape. This feature helps you understand how different regulations and policies interrelate, ensuring you have a holistic view of your compliance requirements. It also allows you to quickly identify gaps between your policies and the regulatory standards, enabling you to address any discrepancies and maintain a compliant organization."
+          description="See how your policies and regulations map out across different jurisdictions and regulations, identify gaps and ensure compliance."
       />
       <FeatureSection 
         icon={<Brain />}
