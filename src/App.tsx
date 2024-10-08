@@ -200,7 +200,7 @@ const SolutionsPage = () => (
       <FeatureSection 
         icon={<Users />}
         title="Proactive Risk Management" 
-        description="Identify and mitigate potential compliance risks before they become issues. Our AI-powered system helps you avoid costly fines and maintain a sterling reputation in your industry."
+        description="Identify and mitigate potential compliance risks in your contracts or internal policies before they become issues. Our AI-powered system helps you avoid costly fines and maintain a sterling reputation in your industry."
       />
       <FeatureSection 
           icon={<Search />} 
