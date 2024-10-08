@@ -203,7 +203,7 @@ const SolutionsPage = () => (
         description="Identify and mitigate potential compliance risks before they become issues. Our AI-powered system helps you avoid costly fines and maintain a sterling reputation in your industry."
       />
       <FeatureSection 
-          icon={<Search size={48} />} 
+          icon={<Search />} 
           title="Policy mapping" 
           description="See how your policies and regulations map out across different jurisdictions and regulations, identify gaps and ensure compliance."
       />
